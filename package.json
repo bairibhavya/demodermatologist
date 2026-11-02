@@ -1,0 +1,12 @@
+{
+  "name": "aurel-dermatology-react", "version": "3.0.0", "private": true, "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0", "build": "vite build", "preview": "vite preview --host 0.0.0.0",
+    "check:api": "node --check api/appointments.js && node --check api/admin-login.js && node --check api/admin.js && node --check api/config.js && node --check lib/server.js",
+    "test:api": "node tests/api-smoke.mjs"
+  },
+  "dependencies": {
+    "framer-motion": "^11.18.2", "gsap": "^3.12.7", "lucide-react": "^0.468.0", "react": "^18.3.1", "react-dom": "^18.3.1", "react-router-dom": "^6.30.1"
+  },
+  "devDependencies": {"@vitejs/plugin-react":"^4.3.4","vite":"^5.4.15"}
+}
